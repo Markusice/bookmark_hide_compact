@@ -1,14 +1,15 @@
-:root[zen-single-toolbar="true"][zen-compact-mode="true"] {
-    & #zen-appcontent-navbar-container {
-        max-height: 0 !important;
-        overflow: hidden;
-        opacity: 0 !important;
-        pointer-events: none !important;
+@media not (-moz-bool-pref: "zen.view.hide-window-controls") {
+    :root[zen-single-toolbar="true"][zen-compact-mode="true"] {
+        & #zen-appcontent-navbar-container {
+            max-height: 0 !important;
+            overflow: hidden;
+            opacity: 0 !important;
 
-        & #PersonalToolbar {
-            max-height: 0px;
-            min-height: 0px;
-            visibility: collapse;
+            & #PersonalToolbar {
+                max-height: 0px;
+                min-height: 0px;
+                visibility: collapse;
+            }
         }
     }
 }
